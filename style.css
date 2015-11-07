@@ -6,6 +6,14 @@ body {
 	background-attachment: fixed;
 }
 
+a, a:active, a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #606060;
+}
+
 .bordered {
 	border-radius: 10px;
 	border: 10px solid black;
