@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
+
 // fade transition animation 
  $(".animsition").animsition({
     inClass: 'fade-in',
@@ -27,6 +28,8 @@ $( document ).ready(function() {
 });
 
 
+
+
 // SCROLL ANIMATION 
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -43,5 +46,13 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 // end scroll animation
+
+    $('div.panel').hover(function(){
+    		$( this ).addClass('clicked');
+    		$('.about_text').toggle(500);
+    		$('.about_image').toggle(500);
+    	});
+
+
 
 
